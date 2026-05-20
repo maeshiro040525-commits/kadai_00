@@ -1,0 +1,310 @@
+/* ここから下に記載していく */
+.header {
+  width: 100%;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.header-inner {
+  height: 140px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+    align-items: center;
+}
+
+.nav ul {
+  display: flex;
+  gap: 50px;
+}
+
+.nav a {
+    font-size: 21px;
+    color: #222;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+
+.nav a:hover {
+  opacity: 0.6;
+}
+
+.mainvisual {
+  position: relative;
+}
+
+.mainvisual-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+
+.mainvisual-text h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+/* 全セクション共通の余白・幅 */
+.section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 0;
+  text-align: center;
+}
+
+/* 全英語見出し共通（24px） */
+.section-title-en {
+  font-size: 24px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-transform: uppercase; 
+}
+
+.section-title-en-yellow {
+  color: #ffd61a;
+}
+
+/* 全日本語見出し共通（18px） */
+.section-title-ja {
+  font-size: 18px;
+  margin-bottom: 60px;
+}
+
+/* About画像4枚を横並び */
+.about-photos {
+  display: flex;
+  margin-top: 60px;
+}
+
+.about-photos img {
+  width: 25%;
+  height: 200px;       /* ★ 固定の高さ */
+  object-fit: cover;   /* ★ はみ出しはトリミング */
+  display: block;
+}
+
+/* ====== リード文（全章共通） ====== */
+.section-lead {
+  font-size: 16px;
+  line-height: 1.8;       /* 行間。1.8 = 文字サイズの1.8倍 */
+  margin-bottom: 60px;
+}
+
+/* ====== コースを縦に積む箱 ====== */
+.course-list {
+  display: flex;
+  flex-direction: column; /* 縦並び（デフォルトと同じだが明示） */
+  gap: 60px;              /* コース間の余白 */
+  text-align: left;       /* sectionの中央寄せを上書き */
+}
+
+/* ====== 1コース分（画像 + テキストを横並び） ====== */
+.course-item {
+  display: flex;
+  align-items: center;    /* 画像とテキストの縦位置を中央に揃える */
+  gap: 40px;              /* 画像とテキストの隙間 */
+}
+
+/* ====== 画像 ====== */
+.course-item img {
+  width: 50%;
+  height: 320px;       /* ★ 固定の高さ */
+  object-fit: cover;   /* ★ はみ出しはトリミング */
+  display: block;
+}
+
+/* ====== テキスト側 ====== */
+.course-text {
+  width: 50%;
+}
+
+.course-item-reverse{
+  flex-direction: row-reverse; /* 画像とテキストの左右を入れ替える */
+}
+
+/* ====== コース内タイトルと本文 ====== */
+.course-text h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.course-text p {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.news-list {
+  display: flex;
+  gap: 30px;              /* コース間の余白 */
+  text-align: left;       /* sectionの中央寄せを上書き */
+  justify-content: center;
+}
+
+.news-item {
+  display: flex;
+  width: 33%;
+  flex-direction: column; /* 縦並び */
+  gap: 30px;              /* ニュース内の要素間の余白 */
+  text-decoration: none;   /* 下線を消す */
+  color: inherit;          /* 親の文字色を使う（青を消す） */
+}
+
+.news-item:hover {
+  opacity: 0.6;               /* ホバーしたら少し透ける */
+}
+
+.more-btn {
+  display: inline-block;       /* widthを効かせるため */
+  width: 300px;
+  height: 60px;
+  line-height: 60px;           /* 高さと同じ値 → 文字が縦中央に */
+  background-color: #ffd61a;
+  color: #222;
+  text-decoration: none;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.more-btn:hover {
+  opacity: 0.6;
+}
+
+.news-date {
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+.news-text {
+  font-size: 16px;
+  margin-top: 24px;
+  line-height: 1.6;
+}
+
+.news-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.access-info {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: left;
+}
+
+.access-info-item {
+  display: flex;
+  gap: 40px;
+}
+
+/* ====== ラベル（学校名、TEL、MAIL等） ====== */
+.access-info-item p:first-child {
+  width: 120px;
+  font-weight: bold;
+}
+
+.lead {
+  line-height: 1.8;
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto 60px; /* 上0、左右auto、下60pxの余白 */
+}
+
+.contact-form {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.form-item {
+  display: flex;
+  gap: 60px;
+  margin-bottom: 30px;
+  align-items: flex-start;
+}
+
+.form-label {
+  width: 240px;
+  font-weight: bold;
+}
+
+.input {
+  width: 300px;
+  height: 36px;
+  padding: 0 10px;
+  border: 1px solid #bfbfbf;
+  font-size: 14px;
+}
+
+select.input {
+  height: 36px;
+  padding: 0 10px;
+}
+
+/* フォーカス時 */
+.input:focus {
+  outline: none;             /* ブラウザデフォルトの青枠を消す */
+  border-color: #ffd61a;     /* 黄色の枠線に */
+}
+
+/* ====== カスタムチェックボックス ====== */
+.custom-checkbox {
+  display: block;
+  margin-bottom: 12px;
+  cursor: pointer;            /* マウスホバー時にカーソル変更 */
+}
+
+.custom-checkbox input {
+  margin-right: 8px;
+  vertical-align: middle;     /* テキストと縦位置揃え */
+}
+
+.custom-checkbox .checkbox-label {
+  vertical-align: middle;
+
+}
+
+/* ====== textarea（詳細欄）の調整 ====== */
+textarea.input {
+  height: auto;          /* 1行用の36pxを解除 */
+  min-height: 120px;     /* 最小の高さ */
+  font-family: inherit;  /* 親の文字フォントを使う */
+}
+
+/* ====== 送信ボタン（300×60、黄色） ====== */
+.submit {
+  display: block;
+  width: 300px;
+  height: 60px;
+  margin: 60px auto 0;        /* 上に余白 + 中央寄せ */
+  background-color: #ffd61a;
+  color: #222;
+  font-size: 18px;
+  border: none;               /* デフォルトの枠線消す */
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+/* ====== Footer（背景グレー、白文字） ====== */
+.footer {
+  background-color: #707070;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+  font-size: 14px;
+}
